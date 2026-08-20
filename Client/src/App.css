@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  background: #f4f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.call-card {
+  width: 100%;
+  max-width: 800px;
+  min-height: 600px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 8px 0 0;
+  color: #666;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.status span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status.online span {
+  background: #22c55e;
+}
+
+.status.offline span {
+  background: #ef4444;
+}
+
+.start-screen {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.ai-icon {
+  font-size: 80px;
+}
+
+.start-screen h2 {
+  margin-top: 25px;
+}
+
+.start-screen p {
+  max-width: 500px;
+  margin: 15px auto 30px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.start-button,
+.message-input button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.start-button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.call-screen {
+  padding-top: 30px;
+}
+
+.call-status {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.pulse {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #22c55e;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.messages {
+  height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.message {
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  max-width: 75%;
+}
+
+.message p {
+  margin: 5px 0 0;
+}
+
+.message.assistant {
+  background: #e0ecff;
+  margin-right: auto;
+}
+
+.message.user {
+  background: #dcfce7;
+  margin-left: auto;
+}
+
+.message-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.end-button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #c08686;
+  color: white;
+  cursor: pointer;
+}
+
+.voice-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.voice-button,
+.stop-button {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.voice-button {
+  background: #2563eb;
+  color: white;
+}
+
+.stop-button {
+  background: #ef4444;
+  color: white;
+}
+
+.recording-status {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.success {
+  color: #16a34a;
+}
